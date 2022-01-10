@@ -1,0 +1,104 @@
+{
+	"version": "2.0.0",
+	"command": "bash",
+	"args": [
+		"-c"
+	],
+	"type": "shell",
+	"echoCommand": true,
+	"tasks": [
+		{
+			"label": "Build Debug",
+			"type": "shell",
+			"command": "~/Ac6/SystemWorkbench/eclipse",
+			"args": [
+				"-nosplash",
+				"-application",
+				"org.eclipse.cdt.managedbuilder.core.headlessbuild",
+				"-import",
+				"${workspaceFolder}/",
+				"-build",
+				"Motherboard/Debug",
+				"--launcher.suppressErrors",
+				"-data",
+				"${workspaceFolder}/../../.."
+			],
+			"group": "build",
+			"options": {
+				"cwd": ""
+			},
+			"problemMatcher": {
+				"owner": "cpp",
+				"fileLocation": "absolute",
+				"pattern": {
+					"regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+					"file": 1,
+					"line": 2,
+					"column": 3,
+					"severity": 4,
+					"message": 5
+				}
+			}
+		},
+		{
+			"label": "Build Release",
+			"type": "shell",
+			"command": "~/Ac6/SystemWorkbench/eclipse",
+			"args": [
+				"-nosplash",
+				"-application",
+				"org.eclipse.cdt.managedbuilder.core.headlessbuild",
+				"-import",
+				"${workspaceFolder}/",
+				"-build",
+				"Motherboard/Release",
+				"--launcher.suppressErrors",
+				"-data",
+				"${workspaceFolder}/../../.."
+			],
+			"group": "build",
+			"options": {
+				"cwd": ""
+			},
+			"problemMatcher": {
+				"owner": "cpp",
+				"fileLocation": "absolute",
+				"pattern": {
+					"regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+					"file": 1,
+					"line": 2,
+					"column": 3,
+					"severity": 4,
+					"message": 5
+				}
+			}
+		},
+		{
+			"label": "Build Debug and Release",
+			"type": "shell",
+			"dependsOrder": "sequence",
+			"dependsOn": [
+				"Build Debug",
+				"Build Release"
+			],
+			"command":[],
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "Documentation",
+			"command": "doxygen 'Motherboard_STM'",
+			"problemMatcher": []
+		},
+		{
+			"label": "Erase Flash",
+			"command": "sh 'EraseFlash.sh'",
+			"problemMatcher": []
+		},
+		{
+			"label": "Disable IWDG during standby",
+			"command": "sh 'Disable_IWDG_DuringStandbyMode.sh'",
+			"problemMatcher": []
+		}
+	]
+}

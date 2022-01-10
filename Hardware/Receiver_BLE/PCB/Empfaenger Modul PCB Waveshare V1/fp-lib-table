@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "Rhizo_Receiver_Shield_final_Module")(type "KiCad")(uri "${KIPRJMOD}/Models_Footprints/Rhizo_Receiver_Shield_final_Module.pretty")(options "")(descr ""))
+  (lib (name "crystal2")(type "KiCad")(uri "${KIPRJMOD}/Models_Footprints/crystal2.pretty")(options "")(descr ""))
+)

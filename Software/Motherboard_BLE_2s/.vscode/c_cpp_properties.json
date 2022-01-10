@@ -1,0 +1,43 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/Inc/**",
+                "${workspaceFolder}/Middlewares/Third_Party/FatFs/src/**",
+                "${workspaceFolder}/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/**",
+                "${workspaceFolder}/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc/**",
+                "${workspaceFolder}/Drivers/CMSIS/Include",
+                "${workspaceFolder}/Drivers/CMSIS/Device/ST/STM32L4xx/Include/**",
+                "${workspaceFolder}/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/**",
+                "${workspaceFolder}/Drivers/STM32L4xx_HAL_Driver/Inc/**"
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "${workspaceFolder}/Inc/**",
+                    "${workspaceFolder}/Middlewares/Third_Party/FatFs/src/**",
+                    "${workspaceFolder}/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/**",
+                    "${workspaceFolder}/Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc/**",
+                    "${workspaceFolder}/Drivers/CMSIS/Include",
+                    "${workspaceFolder}/Drivers/CMSIS/Device/ST/STM32L4xx/Include/**",
+                    "${workspaceFolder}/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/**",
+                    "${workspaceFolder}/Drivers/STM32L4xx_HAL_Driver/Inc/**"
+                ]
+            },
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "~/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.arm-none.linux64_1.17.0.201812190825/tools/compiler/bin/arm-none-eabi-g++",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "defines": [
+                "DEBUG",
+                "USE_HAL_DRIVER",
+                "STM32L496xx",
+                "USE_FULL_LL_DRIVER",
+                "__weak=\"__attribute__((weak))\"",
+                "__packed=\"__attribute__((__packed__))\""
+            ]
+        }
+    ],
+    "version": 4
+}

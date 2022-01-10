@@ -1,0 +1,272 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 8920 1382 1520 636 
+U 5FBBC73F
+F0 "PowerSupply" 50
+F1 "PowerSupply.sch" 50
+$EndSheet
+$Sheet
+S 8910 2620 1480 676 
+U 5FBBC8EA
+F0 "Sensor" 50
+F1 "Sensor.sch" 50
+$EndSheet
+$Comp
+L device:LED D101
+U 1 1 5FC6C947
+P 7016 3093
+F 0 "D101" V 6970 3171 50  0000 L CNN
+F 1 "LED" V 7061 3171 50  0000 L CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7016 3093 50  0001 C CNN
+F 3 "" H 7016 3093 50  0001 C CNN
+	1    7016 3093
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R101
+U 1 1 5FC6DD17
+P 7016 2643
+F 0 "R101" H 7086 2689 50  0000 L CNN
+F 1 "1k" H 7086 2598 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 6946 2643 50  0001 C CNN
+F 3 "~" H 7016 2643 50  0001 C CNN
+	1    7016 2643
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7016 2793 7016 2893
+Wire Wire Line
+	7016 3293 7016 3393
+Text GLabel 7016 3393 3    50   Output ~ 0
+PWR_LED
+$Comp
+L Waveshare:nRF52840 U101
+U 1 1 5FC6EBEF
+P 3112 4140
+F 0 "U101" H 3112 1251 50  0000 C CNN
+F 1 "nRF52840" H 3112 1160 50  0000 C CNN
+F 2 "Waveshare Module Small V1:Waveshare_nRF528840" H 3112 1240 50  0001 C CNN
+F 3 "" H 2462 6040 50  0001 C CNN
+	1    3112 4140
+	1    0    0    -1  
+$EndComp
+Text GLabel 1562 6040 0    50   BiDi ~ 0
+SWDIO
+Text GLabel 1562 5940 0    50   BiDi ~ 0
+SWDCLK
+Text GLabel 1562 5840 0    50   Input ~ 0
+Reset
+Wire Wire Line
+	1562 5840 1812 5840
+Wire Wire Line
+	1562 5940 1812 5940
+Wire Wire Line
+	1562 6040 1812 6040
+$Comp
+L power:GND #PWR0101
+U 1 1 5FC70CF4
+P 3112 7240
+F 0 "#PWR0101" H 3112 6990 50  0001 C CNN
+F 1 "GND" H 3117 7067 50  0000 C CNN
+F 2 "" H 3112 7240 50  0001 C CNN
+F 3 "" H 3112 7240 50  0001 C CNN
+	1    3112 7240
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3112 6940 3112 7240
+Wire Wire Line
+	3112 1340 3112 1140
+Wire Wire Line
+	3112 1140 3212 1140
+Wire Wire Line
+	3312 1140 3312 1340
+$Comp
+L power:+3V3 #PWR0102
+U 1 1 5FC71EA3
+P 3212 990
+F 0 "#PWR0102" H 3212 840 50  0001 C CNN
+F 1 "+3V3" H 3227 1163 50  0000 C CNN
+F 2 "" H 3212 990 50  0001 C CNN
+F 3 "" H 3212 990 50  0001 C CNN
+	1    3212 990 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3212 990  3212 1140
+Connection ~ 3212 1140
+Wire Wire Line
+	3212 1140 3312 1140
+Text GLabel 4562 1840 2    50   Input ~ 0
+AIN0.1
+Text GLabel 4562 1940 2    50   Input ~ 0
+AIN0.2
+Text GLabel 4562 2040 2    50   Output ~ 0
+STBY
+Text GLabel 4562 3440 2    50   Output ~ 0
+GPIO_PWM
+Text GLabel 4562 4340 2    50   Input ~ 0
+AIN_U_BAT
+Text GLabel 4562 4440 2    50   BiDi ~ 0
+SMDATA
+Text GLabel 4562 4540 2    50   Output ~ 0
+SMCLK
+Text GLabel 4562 5440 2    50   Input ~ 0
+PWR_LED
+Wire Wire Line
+	4412 5440 4562 5440
+Wire Wire Line
+	4412 4540 4562 4540
+Wire Wire Line
+	4412 4440 4562 4440
+Wire Wire Line
+	4412 4340 4562 4340
+Wire Wire Line
+	4412 3440 4562 3440
+Wire Wire Line
+	4412 1840 4562 1840
+Wire Wire Line
+	4412 1940 4562 1940
+Wire Wire Line
+	4412 2040 4562 2040
+$Comp
+L Device:Antenna_Shield AE101
+U 1 1 5FC04067
+P 7050 5200
+F 0 "AE101" H 7194 5239 50  0000 L CNN
+F 1 "Antenna_Shield" H 7194 5148 50  0000 L CNN
+F 2 "RF_Antenna:Texas_SWRA117D_2.4GHz_Right" H 7050 5300 50  0001 C CNN
+F 3 "~" H 7050 5300 50  0001 C CNN
+	1    7050 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C101
+U 1 1 5FC045CD
+P 7500 5800
+F 0 "C101" H 7615 5846 50  0000 L CNN
+F 1 "1,5pF" H 7615 5755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 7538 5650 50  0001 C CNN
+F 3 "~" H 7500 5800 50  0001 C CNN
+	1    7500 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5FC04EB7
+P 7500 6150
+F 0 "#PWR0104" H 7500 5900 50  0001 C CNN
+F 1 "GND" H 7505 5977 50  0000 C CNN
+F 2 "" H 7500 6150 50  0001 C CNN
+F 3 "" H 7500 6150 50  0001 C CNN
+	1    7500 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5FC054F6
+P 7050 6150
+F 0 "#PWR0105" H 7050 5900 50  0001 C CNN
+F 1 "GND" H 7055 5977 50  0000 C CNN
+F 2 "" H 7050 6150 50  0001 C CNN
+F 3 "" H 7050 6150 50  0001 C CNN
+	1    7050 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 5400 7050 6150
+Wire Wire Line
+	7150 5400 7150 5500
+Wire Wire Line
+	7150 5500 7500 5500
+Wire Wire Line
+	7500 6150 7500 5950
+Wire Wire Line
+	7500 5650 7500 5500
+Wire Wire Line
+	9150 3900 10050 3900
+Wire Wire Line
+	9150 3700 9150 3900
+Wire Wire Line
+	9150 4100 10050 4100
+Wire Wire Line
+	9150 4100 9150 4650
+$Comp
+L power:+3V3 #PWR0107
+U 1 1 5FDDE070
+P 9150 3700
+F 0 "#PWR0107" H 9150 3550 50  0001 C CNN
+F 1 "+3V3" H 9165 3873 50  0000 C CNN
+F 2 "" H 9150 3700 50  0001 C CNN
+F 3 "" H 9150 3700 50  0001 C CNN
+	1    9150 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5FDDD44C
+P 9150 4650
+F 0 "#PWR0106" H 9150 4400 50  0001 C CNN
+F 1 "GND" H 9155 4477 50  0000 C CNN
+F 2 "" H 9150 4650 50  0001 C CNN
+F 3 "" H 9150 4650 50  0001 C CNN
+	1    9150 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7016 2393 7016 2493
+$Comp
+L power:+3V3 #PWR0103
+U 1 1 5FC6D243
+P 7016 2393
+F 0 "#PWR0103" H 7016 2243 50  0001 C CNN
+F 1 "+3V3" H 7031 2566 50  0000 C CNN
+F 2 "" H 7016 2393 50  0001 C CNN
+F 3 "" H 7016 2393 50  0001 C CNN
+	1    7016 2393
+	1    0    0    -1  
+$EndComp
+Text Notes 9650 3700 0    50   ~ 0
+SWD Programmer\n
+Wire Wire Line
+	9750 4400 10050 4400
+Wire Wire Line
+	9750 4300 10050 4300
+Wire Wire Line
+	9750 4200 10050 4200
+Wire Wire Line
+	9750 4000 10050 4000
+$Comp
+L Connector_Generic:Conn_01x06 J101
+U 1 1 5FC6B589
+P 10250 4100
+F 0 "J101" H 10330 4092 50  0000 L CNN
+F 1 "Conn_01x06" H 10330 4001 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 10250 4100 50  0001 C CNN
+F 3 "~" H 10250 4100 50  0001 C CNN
+	1    10250 4100
+	1    0    0    -1  
+$EndComp
+Text GLabel 9750 4400 0    50   Output ~ 0
+VBUS
+Text GLabel 9750 4300 0    50   Input ~ 0
+Reset
+Text GLabel 9750 4200 0    50   BiDi ~ 0
+SWDIO
+Text GLabel 9750 4000 0    50   Output ~ 0
+SWDCLK
+$EndSCHEMATC

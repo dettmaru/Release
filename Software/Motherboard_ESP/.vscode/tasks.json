@@ -1,0 +1,68 @@
+{
+	"version": "2.0.0",
+	"command": "bash",
+	"args": [
+		"-c"
+	],
+	"type": "shell",
+	"echoCommand": true,
+	"tasks": [
+		{
+			"label": "Build",
+			"type": "shell",
+			"command": "make '-j4'",
+			"group": "build",
+			"problemMatcher": {
+				"owner": "cpp",
+				"fileLocation": "absolute",
+				"pattern": {
+					"regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+					"file": 1,
+					"line": 2,
+					"column": 3,
+					"severity": 4,
+					"message": 5
+				}
+			}
+		},
+		{
+			"label": "Monitor",
+			"command": "make 'monitor'",
+			"problemMatcher": []
+		},
+		{
+			"label": "Clean",
+			"command": "make 'clean'",
+			"problemMatcher": []
+		},
+		{
+			"label": "Flash",
+			"command": "make 'flash'",
+			"problemMatcher": []
+		},
+		{
+			"label": "Assembly",
+			"command": "xtensa-esp32-elf-objdump '-D -S build/${projectname}.elf > ${projectname}Assembly.txt'",
+			"problemMatcher": []
+		},
+		{
+			"label": "OpenOCD",
+			"args": [
+				"${openOCDPath}/src/openocd -s ${openOCDPath}/tcl -f ${openOCDPath}/esp32.cfg"
+			],
+			"problemMatcher": []
+		},
+		{
+			"label": "DumpELF",
+			"args": [
+				"xtensa-esp32-elf-objdump -x build/${projectname}.elf > ${projectname}ObjDump.txt"
+			],
+			"problemMatcher": []
+		},
+		{
+			"label": "Erase",
+			"command": "make 'erase_flash'",
+			"problemMatcher": []
+		}
+	]
+}

@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Rhizo_Receiver_Shield-rescue)(type Legacy)(uri ${KIPRJMOD}/Rhizo_Receiver_Shield-rescue.lib)(options "")(descr ""))
+)

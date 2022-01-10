@@ -1,0 +1,102 @@
+Configuration	StandbyTest2
+STM32CubeMX 	4.24.0
+Date	02/28/2018
+MCU	STM32L496ZGTx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+ADC1	Temperature Sensor Channel	ADC1_TempSens_Input	VP_ADC1_TempSens_Input
+ADC1	Vbat Channel	ADC1_Vbat_Input	VP_ADC1_Vbat_Input
+ADC1	Vrefint Channel	ADC1_Vref_Input	VP_ADC1_Vref_Input
+ADC3	IN6 Single-ended	ADC3_IN6	PF3
+ADC3	Temperature Sensor Channel	ADC3_TempSens_Input	VP_ADC3_TempSens_Input
+ADC3	Vbat Channel	ADC3_Vbat_Input	VP_ADC3_Vbat_Input
+RCC	Crystal/Ceramic Resonator	RCC_OSC32_IN	PC14-OSC32_IN (PC14)
+RCC	Crystal/Ceramic Resonator	RCC_OSC32_OUT	PC15-OSC32_OUT (PC15)
+RTC	Activate RTC Clock Source	RTC_VS_RTC_Activate	VP_RTC_VS_RTC_Activate
+RTC	RTC Enabled	RTC_VS_RTC_Calendar	VP_RTC_VS_RTC_Calendar
+RTC	Internal WakeUp	RTC_VS_RTC_WakeUp_intern	VP_RTC_VS_RTC_WakeUp_intern
+SDMMC1	SD 1 bit	SDMMC1_CK	PC12
+SDMMC1	SD 1 bit	SDMMC1_CMD	PD2
+SDMMC1	SD 1 bit	SDMMC1_D0	PC8
+SPI2	Full-Duplex Master	SPI2_MISO	PB14
+SPI2	Full-Duplex Master	SPI2_MOSI	PB15
+SPI2	Full-Duplex Master	SPI2_SCK	PB13
+SPI2	Hardware NSS Output Signal	SPI2_NSS	PB12
+SYS	Trace Asynchronous Sw	SYS_JTMS-SWDIO	PA13 (JTMS/SWDIO)
+SYS	Trace Asynchronous Sw	SYS_JTCK-SWCLK	PA14 (JTCK/SWCLK)
+SYS	Trace Asynchronous Sw	SYS_JTDO-SWO	PB3 (JTDO/TRACESWO)
+SYS	SYS_WakeUp0	SYS_WKUP1	PA0
+SYS	SYS_WakeUp1	SYS_WKUP2	PC13
+SYS	SYS_WakeUp2	SYS_WKUP3	PE6
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+USB_OTG_FS	Device_Only	USB_OTG_FS_DM	PA11
+USB_OTG_FS	Device_Only	USB_OTG_FS_DP	PA12
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+1	PE2	GPIO_Input	LOAD_STAT1
+2	PE3	GPIO_Input	LOAD_STAT2
+3	PE4	GPIO_Input	LOAD_PG
+5	PE6	SYS_WKUP3	BT1
+7	PC13	SYS_WKUP2	BT2
+8	PC14-OSC32_IN (PC14)	RCC_OSC32_IN	
+9	PC15-OSC32_OUT (PC15)	RCC_OSC32_OUT	
+13	PF3	ADC3_IN6	VBATT_SENSE
+34	PA0	SYS_WKUP1	BT3
+49	PF11	GPIO_Output	ESP_ON
+50	PF12	GPIO_Output	NRF_ON
+56	PG0	GPIO_Output	ARD_ON
+57	PG1	GPIO_Output	ARDIO_ON
+73	PB12	SPI2_NSS	
+74	PB13	SPI2_SCK	
+75	PB14	SPI2_MISO	
+76	PB15	SPI2_MOSI	
+82	PD13	GPIO_Output	SD_PWR
+85	PD14	GPIO_Output	LED3
+86	PD15	GPIO_Output	LED4
+87	PG2	GPIO_Output	NRF_CE
+88	PG3	GPIO_EXTI3 GPIO_Input	NRF_IRQ
+89	PG4	GPIO_Output	NRF_CSN
+90	PG5	GPIO_Output	SENSE_ON
+97	PC7	GPIO_Input	VBATT_OK
+98	PC8	SDMMC1_D0	
+103	PA11	USB_OTG_FS_DM	
+104	PA12	USB_OTG_FS_DP	
+105	PA13 (JTMS/SWDIO)	SYS_JTMS-SWDIO	
+109	PA14 (JTCK/SWCLK)	SYS_JTCK-SWCLK	
+113	PC12	SDMMC1_CK	
+116	PD2	SDMMC1_CMD	
+133	PB3 (JTDO/TRACESWO)	SYS_JTDO-SWO	
+141	PE0	GPIO_Output	LED1
+142	PE1	GPIO_Output	LED2
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : StandbyTest2
+Project Folder : /media/Data/Programmierung/BA_CircuitDesign/sources/StandbyTest2
+Toolchain / IDE : SW4STM32
+Firmware Package Name and Version : STM32Cube FW_L4 V1.11.0
+
+
+Code Generation Settings : 
+STM32Cube Firmware Library Package : Copy only the necessary library files
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : No
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : Balanced Size/Speed
+
+
+
+
+
+

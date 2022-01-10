@@ -1,0 +1,6 @@
+build/
+sdkconfig.old
+sdkconfig
+main/MQTTClient-C/src/MQTTClient.c.diff
+main/MQTTClient-C/src/MQTTClient.h.diff
+.vscode/ipch/

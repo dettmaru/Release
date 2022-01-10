@@ -1,0 +1,12 @@
+(sym_lib_table
+  (lib (name emc1428reflib)(type Legacy)(uri ${KIPRJMOD}/footprints_models/emc1428reflib.lib)(options "")(descr ""))
+  (lib (name 74lvch16t245)(type Legacy)(uri ${KIPRJMOD}/footprints_models/MCP16251/suf-electronics-KiCAD-lib-master/library/74lvch16t245.lib)(options "")(descr ""))
+  (lib (name conn)(type Legacy)(uri ${KIPRJMOD}/footprints_models/MCP16251/suf-electronics-KiCAD-lib-master/library/conn.lib)(options "")(descr ""))
+  (lib (name device)(type Legacy)(uri ${KIPRJMOD}/footprints_models/MCP16251/suf-electronics-KiCAD-lib-master/library/device.lib)(options "")(descr ""))
+  (lib (name jumper)(type Legacy)(uri ${KIPRJMOD}/footprints_models/MCP16251/suf-electronics-KiCAD-lib-master/library/jumper.lib)(options "")(descr ""))
+  (lib (name suf)(type Legacy)(uri ${KIPRJMOD}/footprints_models/MCP16251/suf-electronics-KiCAD-lib-master/library/suf.lib)(options "")(descr ""))
+  (lib (name ti_sbw)(type Legacy)(uri ${KIPRJMOD}/footprints_models/MCP16251/suf-electronics-KiCAD-lib-master/library/ti_sbw.lib)(options "")(descr ""))
+  (lib (name tlc5955)(type Legacy)(uri ${KIPRJMOD}/footprints_models/MCP16251/suf-electronics-KiCAD-lib-master/library/tlc5955.lib)(options "")(descr ""))
+  (lib (name 2019-10-15_12-11-12)(type Legacy)(uri ${KIPRJMOD}/footprints_models/max6581/2019-10-15_12-11-12.lib)(options "")(descr ""))
+  (lib (name Waveshare)(type Legacy)(uri ${KIPRJMOD}/Waveshare.lib)(options "")(descr ""))
+)

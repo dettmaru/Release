@@ -1,0 +1,252 @@
+PCBNEW-LibModule-V1  18/09/2014 06:07:08
+# encoding utf-8
+Units mm
+$INDEX
+DIP-20__300LP
+DIP-8
+$EndINDEX
+$MODULE DIP-20__300LP
+Po 0 0 0 15 52C984F3 00000000 ~~
+Li DIP-20__300LP
+Cd 20 pins DIL package, large round pads
+Kw DIL
+Sc 0
+AR 
+Op 0 0 0
+T0 -8.89 -1.27 1.778 1.143 0 0.3048 N V 21 N "U***"
+T1 6.35 1.27 1.778 1.143 0 0.3048 N V 21 N "20DIP300"
+DS -13.97 -1.27 -12.7 -1.27 0.381 21
+DS -12.7 -1.27 -12.7 1.27 0.381 21
+DS -12.7 1.27 -13.97 1.27 0.381 21
+DS -13.97 -2.54 13.97 -2.54 0.381 21
+DS 13.97 -2.54 13.97 2.54 0.381 21
+DS 13.97 2.54 -13.97 2.54 0.381 21
+DS -13.97 2.54 -13.97 -2.54 0.381 21
+$PAD
+Sh "1" R 1.5 1.5 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -11.43 3.81
+$EndPAD
+$PAD
+Sh "2" C 1.5 1.5 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -8.89 3.81
+$EndPAD
+$PAD
+Sh "3" C 1.5 1.5 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -6.35 3.81
+$EndPAD
+$PAD
+Sh "4" C 1.5 1.5 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -3.81 3.81
+$EndPAD
+$PAD
+Sh "5" C 1.5 1.5 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -1.27 3.81
+$EndPAD
+$PAD
+Sh "6" C 1.5 1.5 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 1.27 3.81
+$EndPAD
+$PAD
+Sh "7" C 1.5 1.5 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 3.81 3.81
+$EndPAD
+$PAD
+Sh "8" C 1.5 1.5 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 6.35 3.81
+$EndPAD
+$PAD
+Sh "9" C 1.5 1.5 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 8.89 3.81
+$EndPAD
+$PAD
+Sh "10" C 1.5 1.5 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 11.43 3.81
+$EndPAD
+$PAD
+Sh "11" C 1.5 1.5 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 11.43 -3.81
+$EndPAD
+$PAD
+Sh "12" C 1.5 1.5 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 8.89 -3.81
+$EndPAD
+$PAD
+Sh "13" C 1.5 1.5 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 6.35 -3.81
+$EndPAD
+$PAD
+Sh "14" C 1.5 1.5 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 3.81 -3.81
+$EndPAD
+$PAD
+Sh "15" C 1.5 1.5 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 1.27 -3.81
+$EndPAD
+$PAD
+Sh "16" C 1.5 1.5 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -1.27 -3.81
+$EndPAD
+$PAD
+Sh "17" C 1.5 1.5 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -3.81 -3.81
+$EndPAD
+$PAD
+Sh "18" C 1.5 1.5 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -6.35 -3.81
+$EndPAD
+$PAD
+Sh "19" C 1.5 1.5 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -8.89 -3.81
+$EndPAD
+$PAD
+Sh "20" C 1.5 1.5 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -11.43 -3.81
+$EndPAD
+$SHAPE3D
+Na "dil/dil_20.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$EndMODULE DIP-20__300LP
+$MODULE DIP-8
+Po 0 0 0 15 541A5A65 00000000 ~~
+Li DIP-8
+Cd 8 pins DIL package, elliptical pads
+Kw DIL
+Sc 0
+AR 
+Op 0 0 0
+T0 -6.35 0 1.778 1.143 900 0.3048 N V 21 N "U***"
+T1 0 0 1.778 1.016 0 0.254 N V 21 N "DIP-8"
+DS -5.08 -1.27 -3.81 -1.27 0.381 21
+DS -3.81 -1.27 -3.81 1.27 0.381 21
+DS -3.81 1.27 -5.08 1.27 0.381 21
+DS -5.08 -2.54 5.08 -2.54 0.381 21
+DS 5.08 -2.54 5.08 2.54 0.381 21
+DS 5.08 2.54 -5.08 2.54 0.381 21
+DS -5.08 2.54 -5.08 -2.54 0.381 21
+$PAD
+Sh "1" O 1.5 2.5 0 0 0
+Dr 0.8001 0 0.5
+At STD N 00E0FFFF
+Ne 0 ""
+Po -3.81 3.81
+$EndPAD
+$PAD
+Sh "2" O 1.5 2.5 0 0 0
+Dr 0.8001 0 0.5
+At STD N 00E0FFFF
+Ne 0 ""
+Po -1.27 3.81
+$EndPAD
+$PAD
+Sh "3" O 1.5 2.5 0 0 0
+Dr 0.8001 0 0.5
+At STD N 00E0FFFF
+Ne 0 ""
+Po 1.27 3.81
+$EndPAD
+$PAD
+Sh "4" O 1.5 2.5 0 0 0
+Dr 0.8001 0 0.5
+At STD N 00E0FFFF
+Ne 0 ""
+Po 3.81 3.81
+$EndPAD
+$PAD
+Sh "5" O 1.5 2.5 0 0 0
+Dr 0.8001 0 -0.5
+At STD N 00E0FFFF
+Ne 0 ""
+Po 3.81 -3.81
+$EndPAD
+$PAD
+Sh "6" O 1.5 2.5 0 0 0
+Dr 0.8001 0 -0.5
+At STD N 00E0FFFF
+Ne 0 ""
+Po 1.27 -3.81
+$EndPAD
+$PAD
+Sh "7" O 1.5 2.5 0 0 0
+Dr 0.8001 0 -0.5
+At STD N 00E0FFFF
+Ne 0 ""
+Po -1.27 -3.81
+$EndPAD
+$PAD
+Sh "8" O 1.5 2.5 0 0 0
+Dr 0.8001 0 -0.5
+At STD N 00E0FFFF
+Ne 0 ""
+Po -3.81 -3.81
+$EndPAD
+$SHAPE3D
+Na "dil/dil_8.wrl"
+Sc 1 1 1
+Of 0 0 0
+Ro 0 0 0
+$EndSHAPE3D
+$EndMODULE DIP-8
+$EndLIBRARY

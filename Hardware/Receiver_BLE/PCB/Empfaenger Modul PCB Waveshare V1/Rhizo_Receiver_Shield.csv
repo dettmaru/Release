@@ -1,0 +1,16 @@
+Reference, Quantity, Value, Footprint
+C14 C18 ,2,100nF,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder
+C15 C16 ,2,4.7?F,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder
+C2 ,1,1.5pF,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder
+D1 D2 D3 D4 ,4,LED,LED_SMD:LED_0603_1608Metric
+D101 ,1,"2,7V",Diode_SMD:D_0603_1608Metric
+J1 ,1,SMA Connector,Connector_Coaxial:SMA_Amphenol_132134-16_Vertical
+P1 P2 P3 P 4P5 P6 P7 P8 ,,CONN_01X01,"2,54mm Stiftleiste 40 Pin"
+P9 ,1,SWD Programmer,Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical
+R101 ,1,120R,Resistor_SMD:R_0603_1608Metric
+R1 R13 ,2,0R,Resistor_SMD:R_0603_1608Metric
+R2 R3 R5 R6 ,4,220,Resistor_SMD:R_0603_1608Metric
+R4 R7 R8 R9 R10 R11 ,6,10k,Resistor_SMD:R_0603_1608Metric
+SW1 ,1,SW_DIP_x05,Button_Switch_SMD:SW_DIP_SPSTx05_Slide_6.7x14.26mm_W6.73mm_P2.54mm_LowProfile_JPin
+SW2 ,1,SW_Push,Button_Switch_SMD:SW_SPST_EVQQ2
+U101 ,1,nRF52840,Rhizo_Receiver_Shield_final_Module:Waveshare_nRF528840

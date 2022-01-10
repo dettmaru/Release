@@ -1,0 +1,7 @@
+Debug/
+Release/
+html/
+latex/
+.settings
+.vscode/ipch/
+Src/Utilities/VersionInfo.cpp
